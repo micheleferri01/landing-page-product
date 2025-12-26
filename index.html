@@ -35,9 +35,9 @@
 
 </head>
 
-<body  data-bs-spy="scroll" data-bs-target="#navbar">
+<body class="conteiner-fluid" data-bs-spy="scroll" data-bs-target="#navbar">
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./img/logo.png" alt="logo-ducks-debugging">
@@ -58,7 +58,7 @@
                             <a class="nav-link active" aria-current="page" href="#jumbo">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">I punti di forza</a>
+                            <a class="nav-link" href="#i-punti-di-forza">I punti di forza</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Recensioni</a>
@@ -76,7 +76,7 @@
                 </div>
             </div>
         </nav>
-        <div class="jumbo row row-cols-1 row-cols-md-2 g-0"id="jumbo">
+        <div class="jumbo row row-cols-1 row-cols-lg-2 g-0"id="jumbo">
             <div class="col jumbo-item">
                 <img src="./img/banner-image.png" alt="" class="jumbo-img">
             </div>
@@ -90,7 +90,45 @@
         </div>
     </header>
     <main>
-        <section id="i-punti-di-forza"></section>
+        <section id="i-punti-di-forza" class="my-5">
+            <div class="row row-cols-1 row-cols-lg-3 g-5">
+                <div class="col">
+                    <div class="row row-cols-1 g-5">
+                        <div class="col text-center">
+                                <h2 class="px-title">Lunga Durata della Batteria</h2>
+                                <p class="px-paragraph">Goditi ore di assistenza continua nella risoluzione dei bug grazie alla lunga durata della "batteria" (ovvero, la tua pazienza) della paperella di gomma.</p>
+                        </div>
+                        <div class="col text-center">
+                            <h2 class="px-title">Compatibilità Universale</h2>
+                            <p class="px-paragraph">Funziona con tutti i linguaggi di programmazione e sistemi operativi, la paperella di gomma è l'unico strumento di debugging che non necessita di aggiornamenti.</p>
+                        </div>
+                        <div class="col text-center">
+                            <h2 class="px-title">Design Elegante</h2>
+                            <p class="px-paragraph">Mostra con orgoglio il design elegante e raffinato della tua paperella di gomma, disponibile in vari colori per abbinarsi al tuo stile di programmatore.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col align-self-center">
+                    <img src="./img/invisible.png" alt="">
+                </div>
+                <div class="col">
+                    <div class="row row-cols-1 g-5">
+                        <div class="col text-center">
+                            <h2 class="px-title">Resistenza agli Spruzzi</h2>
+                            <p class="px-paragraph">Perfetta per resistere ai piccoli incidenti con caffè e bevande, la tua paperella di gomma non teme schizzi, mantenendoti sempre pronto per il debugging.</p>
+                        </div>
+                        <div class="col text-center">
+                            <h2 class="px-paragraph">Portabilità</h2>
+                            <p class="px-paragraph">Leggera e facile da trasportare, la paperella di gomma può essere il tuo compagno di lavoro ovunque tu vada. Portala con te per un supporto costante.</p>
+                        </div>
+                        <div class="col text-center">
+                            <h2 class="px-title">Promemoria Anti-Stress</h2>
+                            <p class="px-paragraph">Quando lo stress del codice diventa troppo, spremi la tua paperella di gomma per un rapido sollievo anti-stress, senza bisogno di software complicati.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="recensioni"></section>
         <section id="paperelle"></section>
         <section id="faqs"></section>

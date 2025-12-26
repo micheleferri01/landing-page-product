@@ -7,7 +7,6 @@
 /* reset */
 body{
     font-family: "Montserrat",sans-serif;
-    font-weight: 400;
     line-height: 1.24;
     color: #3D3A38;
 }
@@ -18,7 +17,6 @@ img{
 
 h1,h2,h3,h4,h5,h6{
     font-family:'Poppins', sans-serif;
-    font-weight: 400;
 }
 /* jumbo */
 .jumbo-img{
@@ -47,10 +45,24 @@ h1,h2,h3,h4,h5,h6{
     outline: 1px solid #3D3A38;
 }
 
+.btn-outline-custom:hover{
+    background-color: black;
+    color: white;
+}
+
+
 /* media query */
 @media screen and (min-width:992px) {
-.jumbo-paragraph {
+    .jumbo-paragraph {
         padding: 0 2.5rem;
+    }
+    /* sezione i punti di forza */
+    .px-paragraph{
+        padding: 0 5.5rem;
+    }
+    
+    .px-title{
+        padding: 0 4.5rem;
     }
 }
 @media screen and (min-width:1200px) {
