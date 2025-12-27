@@ -82,6 +82,20 @@ h1,h2,h3,h4,h5,h6{
     transition: none;
     vertical-align: middle;
 }
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    color: inherit;
+    background-color: transparent;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.accordion-item{
+    border-color: transparent;
+}
 /* media query */
 @media screen and (min-width:992px) {
     .jumbo-paragraph {
