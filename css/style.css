@@ -67,6 +67,21 @@ h1,h2,h3,h4,h5,h6{
 .bg-section-paperelle{
     background-color: #f5f5f5;
 }
+
+/* personalizzazione accordion */
+.accordion-button::after{
+    content: url('../svg/plus-lg.svg');
+    background-image: none;
+    transition: none;
+    vertical-align: middle;
+}
+
+.accordion-button:not(.collapsed)::after{
+    content: url('../svg/dash-lg.svg');
+    background-image: none;
+    transition: none;
+    vertical-align: middle;
+}
 /* media query */
 @media screen and (min-width:992px) {
     .jumbo-paragraph {
