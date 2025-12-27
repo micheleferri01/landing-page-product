@@ -18,6 +18,12 @@ img{
 h1,h2,h3,h4,h5,h6{
     font-family:'Poppins', sans-serif;
 }
+
+/* utils */
+.sections-title{
+    font-size: 3.5rem;
+}
+
 /* jumbo */
 .jumbo-img{
     height: 85vh;
@@ -50,7 +56,17 @@ h1,h2,h3,h4,h5,h6{
     color: white;
 }
 
+.stars{
+    color: #fdbd0a;
+}
 
+.duck-price{
+    color: #04DF6C;
+}
+
+.bg-section-paperelle{
+    background-color: #f5f5f5;
+}
 /* media query */
 @media screen and (min-width:992px) {
     .jumbo-paragraph {
