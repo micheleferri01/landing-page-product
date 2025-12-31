@@ -108,7 +108,30 @@ h1,h2,h3,h4,h5,h6{
 .accordion-item{
     border-color: transparent;
 }
-/* media query */
+
+#balloon, #bag-heart, #handiplast{
+    display: block;
+    width: 32px;
+    margin: 0 auto;
+}
+
+.promo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.promo-item{
+    padding: 0 10px;
+    border-right: 1px solid #3d3a382b;
+}
+
+.promo-item:nth-child(2),
+.promo-item:last-child{
+    border-color: transparent;
+}
+
+ /* media query */
 @media screen and (min-width:992px) {
     .jumbo-paragraph {
         padding: 0 2.5rem;
@@ -121,6 +144,11 @@ h1,h2,h3,h4,h5,h6{
     .px-title{
         padding: 0 4.5rem;
     }
+
+    .promo-item:nth-child(2) {
+        border-color: #3d3a382b;
+    }
+
 }
 @media screen and (min-width:1200px) {
     .jumbo-paragraph {
