@@ -37,6 +37,7 @@
 
 <body class="conteiner-fluid" data-bs-spy="scroll" data-bs-target="#navbar">
     <header>
+        <!-- # Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -44,7 +45,12 @@
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="navbar-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
+                        </svg>
+                    </span>
                 </button>
                 <div class="navbar-collapse offcanvas offcanvas-end align-items-start flex-lg-wrap align-content-lg-end ps-2"
                     data-bs-backdrop="true" tabindex="-1" id="navbarNav">
@@ -67,7 +73,7 @@
                             <a class="nav-link" href="#paperelle">Paperelle</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQs</a>
+                            <a class="nav-link" href="#faqs">FAQs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Newsletter</a>
@@ -76,12 +82,12 @@
                 </div>
             </div>
         </nav>
+        <!-- # Jumbo -->
         <div class="jumbo row row-cols-1 row-cols-lg-2 g-0" id="jumbo">
             <div class="col jumbo-item">
                 <img src="./img/banner-image.png" alt="" class="jumbo-img">
             </div>
-            <div
-                class=" col jumbo-content jumbo-item flex-grow-1 text-center d-flex flex-column justify-content-center">
+            <div class=" col jumbo-content jumbo-item flex-grow-1 text-center d-flex flex-column justify-content-center">
                 <div>
                     <h1 class="jumbo-title">Rubber Duck Debuggings</h1>
                     <p class="jumbo-paragraph">Spiegare il codice a una paperella di gomma aiuta i progammatori a
@@ -92,23 +98,24 @@
         </div>
     </header>
     <main>
+        <!-- # Pumti di forza -->
         <section id="i-punti-di-forza" class="my-5 container-fluid">
-            <div class="row row-cols-1 row-cols-lg-3 g-5">
+            <div class="row row-cols-1 row-cols-lg-3">
                 <div class="col">
-                    <div class="row row-cols-1 g-5">
-                        <div class="col text-center">
+                    <div class="d-flex flex-column gap-5">
+                        <div class="text-center">
                             <h2 class="px-title">Lunga Durata della Batteria</h2>
                             <p class="px-paragraph">Goditi ore di assistenza continua nella risoluzione dei bug grazie
                                 alla lunga durata della "batteria" (ovvero, la tua pazienza) della paperella di gomma.
                             </p>
                         </div>
-                        <div class="col text-center">
+                        <div class="text-center">
                             <h2 class="px-title">Compatibilità Universale</h2>
                             <p class="px-paragraph">Funziona con tutti i linguaggi di programmazione e sistemi
                                 operativi, la paperella di gomma è l'unico strumento di debugging che non necessita di
                                 aggiornamenti.</p>
                         </div>
-                        <div class="col text-center">
+                        <div class="text-center">
                             <h2 class="px-title">Design Elegante</h2>
                             <p class="px-paragraph">Mostra con orgoglio il design elegante e raffinato della tua
                                 paperella di gomma, disponibile in vari colori per abbinarsi al tuo stile di
@@ -120,19 +127,19 @@
                     <img src="./img/invisible.png" alt="">
                 </div>
                 <div class="col">
-                    <div class="row row-cols-1 g-5">
-                        <div class="col text-center">
+                    <div class="d-flex flex-column gap-5">
+                        <div class="text-center">
                             <h2 class="px-title">Resistenza agli Spruzzi</h2>
                             <p class="px-paragraph">Perfetta per resistere ai piccoli incidenti con caffè e bevande, la
                                 tua paperella di gomma non teme schizzi, mantenendoti sempre pronto per il debugging.
                             </p>
                         </div>
-                        <div class="col text-center">
-                            <h2 class="px-paragraph">Portabilità</h2>
+                        <div class="text-center">
+                            <h2 class="px-title">Portabilità</h2>
                             <p class="px-paragraph">Leggera e facile da trasportare, la paperella di gomma può essere il
                                 tuo compagno di lavoro ovunque tu vada. Portala con te per un supporto costante.</p>
                         </div>
-                        <div class="col text-center">
+                        <div class="text-center">
                             <h2 class="px-title">Promemoria Anti-Stress</h2>
                             <p class="px-paragraph">Quando lo stress del codice diventa troppo, spremi la tua paperella
                                 di gomma per un rapido sollievo anti-stress, senza bisogno di software complicati.</p>
@@ -141,6 +148,7 @@
                 </div>
             </div>
         </section>
+        <!-- # Recensioni -->
         <section id="recensioni">
             <h2 class="text-center sections-title py-5">Cosa ne pensano i nostri sviluppatori</h2>
         </section>
@@ -176,8 +184,9 @@
             </div>
 
         </section>
+        <!-- # FAQs -->
         <section class="py-5 container-fluid" id="faqs">
-            <div class="row">
+            <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col">
                     <img src="./img/single-image2.png" alt="">
                 </div>
@@ -189,16 +198,12 @@
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#faqsOne" aria-expanded="true"
                                     aria-controls="faqsOne">
-                                    Accordion Item #1
+                                    Come posso utilizzare la paperella di gomma per il debugging?
                                 </button>
                             </h2>
                             <div id="faqsOne" class="accordion-collapse collapse show">
                                 <div class="accordion-body">
-                                    <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse
-                                    plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                                    custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go
-                                    within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Il rubber duck debugging è semplice: spiega il tuo codice alla paperella di gomma come se fosse un collega. Descrivendo ogni passo, potresti individuare errori o capire meglio il problema. La paperella non risponde, ma ti aiuta a chiarire i tuoi pensieri.
                                 </div>
                             </div>
                         </div>
@@ -207,16 +212,12 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#faqsTwo" aria-expanded="false"
                                     aria-controls="faqsTwo">
-                                    Accordion Item #2
+                                    Quali sono i vantaggi di usare una paperella di gomma per i programmatori?
                                 </button>
                             </h2>
                             <div id="faqsTwo" class="accordion-collapse collapse">
                                 <div class="accordion-body">
-                                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse
-                                    plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                                    custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go
-                                    within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    La paperella di gomma aiuta i programmatori a pensare in modo critico e a verbalizzare i problemi. Questo processo può portare a nuove intuizioni e soluzioni. Inoltre, è un ottimo strumento antistress e aggiunge un tocco di personalitàalla scrivania.
                                 </div>
                             </div>
                         </div>
@@ -225,21 +226,37 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#faqsThree" aria-expanded="false"
                                     aria-controls="faqsThree">
-                                    Accordion Item #3
+                                    Posso usare la paperella di gomma indipendentemente dal linguaggio di programmazione che utilizzo?
                                 </button>
                             </h2>
                             <div id="faqsThree" class="accordion-collapse collapse">
                                 <div class="accordion-body">
-                                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse
-                                    plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                                    custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go
-                                    within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    Assolutamente sì! La paperella di gomma è universale e funziona con qualsiasi linguaggio di programmazione. Non importa se stai scrivendo in Python, Java, C++ o qualsiasi altro linguaggio, la paperella sarà sempre pronta ad ascoltarti.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqsFour"
+                                    aria-expanded="false" aria-controls="faqsFour">
+                                    Quanto dettagliatamente devo spiegare il mio codice alla paperella di gomma?
+                                </button>
+                            </h2>
+                            <div id="faqsFour" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Dovresti spiegare ogni dettaglio del tuo codice. Più sei dettagliato, più è probabile che tu scopra errori o ottenga nuove prospettive. Questo processo ti costringe a rivedere attentamente ogni parte del tuo lavoro.
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
             </div>
         </section>
     </main>
