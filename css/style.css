@@ -25,6 +25,13 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* navbar */
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
 .navbar-toggler-icon{
     background-image: none;
 }
