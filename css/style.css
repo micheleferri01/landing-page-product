@@ -36,6 +36,15 @@ h1,h2,h3,h4,h5,h6{
     background-image: none;
 }
 
+.offcanvas-header {
+    position: relative;
+}
+
+.offcanvas-header .btn-close{
+    position: absolute;
+    left: 352px;
+}
+
 /* jumbo */
 .jumbo-img{
     height: 85vh;
